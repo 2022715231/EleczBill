@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:padding="25dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="ElecZ Bill Calculator"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:textColor="#222222"
+            android:layout_marginBottom="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <!-- Month Spinner -->
+        <Spinner
+            android:id="@+id/spinnerMonth"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:background="@drawable/rounded_box"
+            android:textSize="18sp"
+            android:layout_marginTop="10dp" />
+
+        <!-- Units -->
+        <EditText
+            android:id="@+id/editUnits"
+            android:hint="Enter Units (kWh)"
+            android:textSize="18sp"
+            android:padding="14dp"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/rounded_box"
+            android:inputType="number" />
+
+        <!-- Rebate -->
+        <EditText
+            android:id="@+id/editRebate"
+            android:hint="Rebate % (0–5)"
+            android:textSize="18sp"
+            android:padding="14dp"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/rounded_box"
+            android:inputType="numberDecimal" />
+
+        <!-- Calculate Button -->
+        <Button
+            android:id="@+id/btnCalculate"
+            android:text="Calculate and Save"
+            android:textSize="20sp"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/btn_primary"
+            android:layout_marginTop="25dp"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content" />
+
+        <!-- View History Button -->
+        <Button
+            android:id="@+id/btnView"
+            android:text="View Saved Bills"
+            android:textSize="20sp"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/btn_secondary"
+            android:layout_marginTop="15dp"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content" />
+
+        <!-- About Page -->
+        <Button
+            android:id="@+id/btnAbout"
+            android:text="About App"
+            android:textSize="20sp"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/btn_about"
+            android:layout_marginTop="15dp"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content" />
+
+        <!-- Result Card -->
+        <LinearLayout
+            android:orientation="vertical"
+            android:padding="20dp"
+            android:background="@drawable/result_card"
+            android:layout_marginTop="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/textResult"
+                android:text="Result will appear here"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textColor="#333333"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>
